@@ -1,0 +1,21 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# R cache
+.Rhistory
+.RData
+.Rproj.user/
+
+# Data and results (bioinformatics files)
+data/
+results/
+*.fastq
+*.fastq.gz
+*.fasta
+*.bam
+*.sam
+
+# OS files
+.DS_Store
+Thumbs.db
