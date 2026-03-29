@@ -32,22 +32,24 @@ def check_quality(sequences, quality_scores, threshold=20):
     return high_quality_sequences
 
 
-# Example data
+# Example DNA sequences used to test the QC function
 sequences = [
     "ATCGATCGATCG",
     "GGGGTTTTCCCC",
     "ATATATATATAT"
 ]
 
+# Example quality scores for each sequence
 quality_scores = [
     [30, 32, 31, 29, 30, 31, 30, 32, 31, 30, 29, 30],
     [10, 12, 15, 14, 13, 12, 11, 10, 12, 13, 11, 10],
     [25, 26, 24, 25, 26, 27, 25, 26, 24, 25, 26, 27]
 ]
 
-# Run QC
+# Run the quality control function on the example data
 filtered = check_quality(sequences, quality_scores)
 
+# Print all sequences that passed the quality checks
 print("\nHigh-quality sequences:")
 for seq in filtered:
     print(seq)
